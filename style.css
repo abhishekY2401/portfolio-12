@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  max-width: 100%;
+}
+header {
+  position: relative;
+  background: #282828;
+  height: 110vh;
+  overflow-x: hidden;
+}
+.nav-section {
+  display: flex;
+  position: relative;
+}
+h3 {
+  font-weight: 600;
+  font-size: 24px;
+  margin: 16px;
+  color: white;
+  transform: translate(4vw, 8px);
+}
+span {
+  color: #55ff55;
+}
+nav {
+  transform: translate(42vw, 0px);
+  position: absolute;
+}
+ul {
+  list-style: none;
+  font-weight: 600;
+  font-size: 24px;
+  display: flex;
+}
+header a {
+  text-decoration: none;
+  margin-left: 96px;
+  color: white;
+}
+header p {
+  color: white;
+  font-size: 1.25em;
+  margin-left: 10vw;
+  font-weight: 700;
+}
+#desc {
+  font-size: 1.35em;
+}
+#profile {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: -2px 6px 15px 20px #181818;
+  margin: 35px 0 0 18vw;
+}
+h1 {
+  color: white;
+  margin-left: 10vw;
+  margin-top: 4vw;
+  font-size: 40px;
+}
+.links {
+  margin-left: 8vw;
+  margin-top: 3vw;
+}
+.links .fab,
+.fa,
+.far {
+  font-weight: 700;
+  margin-left: -68px;
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 8px;
+}
+.projects-section {
+  background-color: white;
+  width: 100%;
+  height: 110vh;
+}
+.projects-section a {
+  color: white;
+  margin-left: 7vw;
+}
+#heading {
+  font-size: 50px;
+  color: black;
+  margin: 0;
+  margin-top: 5vw;
+  text-align: center;
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: translate(0%, -20%);
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+.cards div {
+  width: 410px;
+  border-radius: 4%;
+  background-color: #f7f7f7;
+  margin-top: 8vw;
+}
+.cards img {
+  width: 100%;
+  height: 240px;
+}
+#more-pro {
+  margin-top: 52vw;
+  color: black;
+  font-size: 1.35em;
+  margin-left: -10vw;
+  text-decoration: none;
+}
+.cards .info-1,
+.info-2,
+.info-3 {
+  padding: 2px 16px;
+}
+.cards h1 {
+  color: #282828;
+  margin-top: -8vw;
+  margin-left: 1vw;
+}
+.cards p {
+  color: #282828;
+  margin-left: 25px;
+}
+.cards .fab,
+.fa {
+  color: #181818;
+  border: 2px solid black;
+  border-radius: 50%;
+  padding: 8px;
+  margin-right: -80px;
+  margin-bottom: 30px;
+}
+.about-me {
+  background-color: #1d49a7;
+  width: 100%;
+  height: 110vh;
+  overflow-x: hidden;
+}
+.about-me h1 {
+  color: #fafafa;
+  padding: 70px;
+}
+#mee {
+  color: #55ff55;
+  margin-left: 15vw;
+  font-size: 1.25em;
+  font-weight: 700;
+}
+.about-me a {
+  text-decoration: none;
+}
+#me {
+  letter-spacing: 0.5px;
+  padding-right: 20vw;
+  padding-left: 15vw;
+  color: lightyellow;
+  font-size: 1.9em;
+  font-family: monospace;
+}
+#resume {
+  margin-left: 11vw;
+}
+footer {
+  background-color: #181818;
+  color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  font-size: small;
+  padding: 10px;
+  overflow-x: hidden;
+}
+footer a {
+  margin-left: 65px;
+}
+footer .fas,
+.fa {
+  border: 2px solid white;
+  margin-top: 12px;
+  margin-left: 20vw;
+  border-radius: 50%;
+  padding: 10px;
+}
+#email {
+  margin-right: 20vw;
+}
+footer .far,
+.fa {
+  margin-left: -10px;
+  margin-top: 12px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  * {
+    width: 100%;
+    background-color: #55ff55;
+  }
+  .projects-section {
+    width: 50%;
+  }
+}
