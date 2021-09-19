@@ -11,7 +11,6 @@ body {
   padding: 0;
   border: 0;
   outline: 0;
-  font-size: 100%;
   max-width: 100%;
 }
 header {
@@ -54,7 +53,8 @@ header a {
 header p {
   color: white;
   font-size: 1.25em;
-  margin-left: 10vw;
+  padding-left: 10vw;
+  padding-right: 7vw;
   font-weight: 700;
 }
 #desc {
@@ -64,12 +64,12 @@ header p {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  box-shadow: -2px 6 15px 20px #181818;
+  box-shadow: -2px 6px 15px 20px #181818;
   margin: 35px 0 0 18vw;
 }
 h1 {
   color: white;
-  margin-left: 10vw;
+  padding-left: 10vw;
   margin-top: 4vw;
   font-size: 40px;
 }
@@ -99,9 +99,8 @@ h1 {
 #heading {
   font-size: 50px;
   color: black;
-  margin: 0;
   margin-top: 5vw;
-  text-align: center;
+  margin-left: 10em;
 }
 .cards {
   display: flex;
@@ -114,8 +113,7 @@ h1 {
 }
 .cards div {
   width: 410px;
-  border-radius: 4%;
-  background-color: #f7f7f7;
+  background-color: #f0e6e6;
   margin-top: 8vw;
 }
 .cards img {
@@ -138,10 +136,10 @@ h1 {
 .cards h1 {
   color: #282828;
   margin-top: -8vw;
-  margin-left: 1.5em;
+  margin-left: -2.3em;
 }
 #pro-heading-3 {
-  margin-left: 1.8px;
+  margin-left: -9vw;
 }
 .cards p {
   color: #282828;
@@ -165,6 +163,7 @@ h1 {
 .about-me h1 {
   color: #fafafa;
   padding: 70px;
+  margin-left: 8vw;
 }
 #mee {
   color: #55ff55;
@@ -195,7 +194,7 @@ footer {
   align-items: center;
   font-size: small;
   padding: 10px;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 footer a {
   margin-left: 50px;
@@ -208,23 +207,80 @@ footer .fas,
   padding: 10px;
 }
 footer h2 {
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+  margin-top: 4px;
+  padding-left: 10px;
 }
 #email {
-  margin-right: 20vw;
+  margin-right: 17vw;
 }
 footer .far,
 .fa {
   margin-left: -10px;
   padding: 10px;
 }
+footer .call, .mail {
+  display: flex;
+  position: relative;
+  top: 10px;
+  overflow: hidden;
+}
 
-@media screen and (max-width: 600px) {
-  * {
-    width: 100%;
-    background-color: #55ff55;
+/* Media Queries */
+
+@media only screen and (max-width: 600px) {
+  #profile {
+    position: relative;
+    left: 12%;
   }
-  .projects-section {
-    width: 50%;
+  h1 {
+    font-size: 6vw;
+    padding-left: 10vw;
+  }
+  .links {
+    margin-left: 4vw;
+  }
+  .cards {
+    flex-direction: column;
+    transform: translate(4px, -2%);
+    margin: auto;
+  }
+  .cards div {
+    width: 400px;
+    text-align: center;
+  }
+  .cards h1 {
+    margin-left: -9vw;
+  }
+  #heading {
+    margin-left: 23vw;
+    text-align: inherit;
+  }
+  #pro-heading-3 {
+    margin-left: -10vw;
+  }
+  .projects-section a {
+    margin: 0px auto;
+    position: relative;
+    margin-left: -9vw;
+    margin-right: 45px;
+  }
+  footer {
+    display: block;
+  }
+  .call, .mail {
+    display: flex;
+  }
+  footer .fas, .fa {
+    margin-left: 0vw;
+    margin-top: 13px;
+  }
+  footer .far, .fa {
+    margin-left: 0px;
+    margin-top: 13px;
+  }
+  h2, #email {
+    margin-right: 5vw;
+    margin-left: 12px;
   }
 }
