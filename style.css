@@ -237,14 +237,20 @@ footer .call, .mail {
 @media only screen and (max-width: 600px) {
   #profile {
     position: relative;
-    left: 12%;
+    left: 6%;
+  }
+  h3 {
+    font-size: 1.2rem;
   }
   h1 {
-    font-size: 6vw;
+    font-size: 1.6rem;
     padding-left: 10vw;
   }
+  #desc {
+    font-size: 1.08rem;
+  }
   .links {
-    margin-left: 4vw;
+    margin-left: 0.7em;
   }
   .cards {
     flex-direction: column;
@@ -257,6 +263,9 @@ footer .call, .mail {
   }
   .cards h1 {
     margin-left: -9vw;
+  }
+  header p {
+    font-size: 1.02rem;
   }
   #heading {
     margin-left: 23vw;
@@ -271,22 +280,45 @@ footer .call, .mail {
     margin-left: -9vw;
     margin-right: 45px;
   }
+  #more-pro {
+    padding-right: 0px;
+  }
   footer {
     display: block;
+    height: 24vh;
   }
   .call, .mail {
     display: flex;
   }
   footer .fas, .fa {
     margin-left: 0vw;
-    margin-top: 13px;
+    margin-top: 0px;
   }
   footer .far, .fa {
     margin-left: 0px;
-    margin-top: 13px;
+    margin-top: 0px;
   }
   h2, #email {
     margin-right: 5vw;
-    margin-left: 12px;
+    margin-left: 10px;
+    font-size: 1rem;
+  }
+  footer h2 {
+    font-size: 1rem;
+  }
+  .about-me h1 {
+    margin-left: 0vw;
+    padding: 40px;
+  } 
+  #mee {
+    margin-left: 12vw;
+  }
+  #resume {
+    margin-left: 8vw;
+  }
+  #me {
+    padding-right: 10vw;
+    padding-left: 12vw;
+    font-size: 1.25rem;
   }
 }
