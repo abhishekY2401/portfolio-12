@@ -285,7 +285,7 @@ footer .call, .mail {
   }
   footer {
     display: block;
-    height: 24vh;
+    height: 22vh;
   }
   .call, .mail {
     display: flex;
